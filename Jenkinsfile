@@ -1,11 +1,10 @@
-
 pipeline {
     agent any
 
     stages {
         stage('Run tests') {
             steps {
-                sh 'python3 test_calculs.py'
+                sh 'pytest test_calculs.py'
             }
         }
     }
