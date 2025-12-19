@@ -1,16 +1,11 @@
+
 pipeline {
     agent any
 
     stages {
-        stage('Clone GitHub') {
+        stage('Run tests') {
             steps {
-                git url: 'https://github.com/wafaroukhmi-tech/my-python.git', branch: 'main'
-            }
-        }
-
-        stage('Run Python') {
-            steps {
-                sh 'python3 main.py'
+                sh 'python3 test_calculs.py'
             }
         }
     }
