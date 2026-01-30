@@ -2,8 +2,8 @@ pipeline {
   agent any
 
   environment {
-    VM2_HOST = "88.169.162.150"
-    VM2_USER = "vm2fiche4"
+    VM2_HOST = "172.17.0.5"
+    VM2_USER = "azureuser"
 
     APP_NAME = "simple-flask-app"
     CONTAINER_NAME = "simple-flask-app-v2"
